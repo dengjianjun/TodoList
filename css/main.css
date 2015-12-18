@@ -1,0 +1,123 @@
+body{
+    color: #737373;
+}
+ul{
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.remove{
+    float: right;
+    width: 10px;
+    height: 10px;
+    padding-right: 10px;
+    display: none;
+    cursor: default;
+    padding: 20px;
+    margin-top: -20px;
+    color: #cc9a9a;
+    font-weight: bold;
+}
+
+.remove:hover{
+    color: #737373;
+}
+
+.compeleted{
+    color: #d9d9d9;
+    text-decoration: line-through;
+}
+
+#todoMain{
+    width: 550px;
+    border: 1px solid #ededed;
+    box-shadow: 1px 1px 5px #ededed;
+}
+
+#todoMain>div{
+    width: 100%;
+}
+
+.todo-list ul>li{
+    border-bottom: 1px solid #ededed;
+    line-height: 57px;
+    font-size: 24px;
+}
+
+.todo-list ul>li:hover .remove{
+    display: block;
+}
+
+.todo-list ul>li>input[type=checkbox]{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.todo-top{
+    border-bottom: 1px solid #ededed;
+    height: 55px;
+    overflow: hidden;
+    position: relative;
+}
+
+.todo-top>input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding-left: 38px;
+}
+
+.todo-top .toggle-check{
+    float: left;
+    font-size: 24px;
+    position: absolute;
+    top: 2px;
+    padding: 10px;
+    cursor: default;
+    color: #d9d9d9;
+}
+
+.todo-top .toggle-check.active{
+    color: #737373;
+}
+
+.todo-bottom{
+    padding-bottom: 8px;
+    padding-left: 10px;
+    line-height: 43px;
+}
+
+.todo-bottom a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.todo-bottom a.show-todo{
+    margin: 5px;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.todo-bottom a.show-todo.active{
+    border: 1px solid;
+}
+
+.todo-bottom a.show-todo:first-of-type{
+    margin-left: 50px;
+}
+
+.todo-bottom a.clear-compeleted{
+    float: right;
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+.todo-bottom a.clear-compeleted:hover{
+    text-decoration: underline;
+}
